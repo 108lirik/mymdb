@@ -1,10 +1,10 @@
-from django.urls import paths
+from django.urls import path
 
-from . import views
+from core import views
 
 app_name = 'core'
-url_patterns = [
+urlpatterns = [
     path('movies',
-    views.MovieList.as_view(),
-    name='MovieList'),
+        views.MovieList.as_view(),
+        name='MovieList'),
 ]
